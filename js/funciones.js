@@ -1,5 +1,5 @@
 function cargarTabla(){
-    readTextFile("https://drive.google.com/drive/u/1/folders/1BGEmdnK1IZB6DtaAg6Snn1dwRTQTiEFa");
+    readTextFile("https://github.com/Luiskr1993/vsquiniela2022/blob/main/jugadores.txt");
 }
 
 function readTextFile(file){
