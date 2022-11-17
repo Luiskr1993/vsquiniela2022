@@ -33,7 +33,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 73%, rgba(141,28,61,1) 100%);
 #tablaPosiciones #bodyCard{
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(225,195,150,1) 50%, rgba(176,150,119,1) 100%);
-    width:70%;
+    width:85%;
     height: 100%;
     align-items: center;
     text-align: center;
