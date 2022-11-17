@@ -24,26 +24,22 @@
     ></script>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
-  <body onload="cargarTabla();">
+  <body onload="llenarJugadores();">
     <div class="container-fluid rounded">
       <center>
         <div class="card shadow-lg rounded mb-1" id="cardTitulo">
           <img src="images/banner1.png" alt="..." />
         </div>
 
-        <div class="card shadow-lg rounded" id="tablaPosiciones">
+        <div class="card shadow-lg rounded pb-2" id="tablaPosiciones">
             <div class="card-header" id="tituloCard">
-                <h5 class="card-title text-light"><strong>TABLA DE POSICIONES</strong></h5>
+                <h6 class="card-title text-light"><strong>TABLA DE POSICIONES</strong></h5>
             </div>
-            <div class="card-body rounded" id="bodyCard">
+            <div class="card-body rounded m-0 p-0" id="bodyCard">
+              <center>
                 <div id="spanTabla">
-                    <table class="" id="dataTable">
-                        <thead id="thead">
-                        </thead>
-                        <tbody id="tbody">
-                        </tbody>
-                    </table>
                 </div>
+              </center>
             </div>
         </div>
         

@@ -1,20 +1,78 @@
-function cargarTabla(){
-    readTextFile("https://github.com/Luiskr1993/vsquiniela2022/blob/main/jugadores.txt");
+var jugador = [];
+
+
+function llenarJugadores(){
+
+    //limpiar el array
+    reiniciaListadoJugadores();
+
+    //vuelve a escribir los jugadores
+
+    let jugador = [
+        ["Luiscar"       , 0],
+        ["Juli"          , 0],
+        ["Heidy"         , 0],
+        ["Memo"          , 0],
+        ["Luis Valiente" , 0],
+        ["Nono"          , 0],
+        ["Byron"         , 0],
+        ["Karlita"       , 0],
+        ["Amis"          , 0],
+        ["Kevin"         , 0],
+        ["Chino"         , 0]
+    ]
+    sortByCol(jugador, 1);
+    dibujarTabla(jugador);
 }
 
-function readTextFile(file){
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function (){
-        if (rawFile.readyState === 4){
-            if (rawFile.status === 200 || rawFile.status === 0){
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
+function reiniciaListadoJugadores(){
+
+    var cantidadJugadores = jugador.length;
+
+    if (cantidadJugadores > 0){
+        console.log("<<Se reiniciará el listado de jugadores>>\n");
+        while(jugador.length > 0){
+            jugador.pop();
         }
     }
-
-    rawFile.send(null);
 }
 
-//prueba
+function sortByCol(arr, colIndex){
+    arr.sort(sortFunction)
+    function sortFunction(a, b) {
+        a = a[colIndex]
+        b = b[colIndex]
+        return (a === b) ? 0 : (b < a) ? -1 : 1
+    }
+}
+
+
+function dibujarTabla(arr){
+    var ss = "";
+    ss += "<div class='table-responsive'>"
+    ss += "<table class='table table-hover table-sm table-borderless'>\n";
+    ss += "<thead>\n";
+    ss += "<tr>\n";
+    ss += "<th scope='col'>POSICIÓN</th>\n";
+    ss += "<th scope='col'>PARTICIPANTE</th>\n";
+    ss += "<th scope='col'>PUNTEO</th>\n";
+    ss += "</tr>\n";
+    ss += "</thead>\n";
+    ss += "<tbody>\n";
+
+    for(var i=0; i<arr.length;i++){
+        ss += "<tr>\n";
+        ss += "<th scope='row'>" + (i+1).toString() + "</th>\n";
+        ss += "<td>" + arr[i][0].toString() + "</td>\n";
+        ss += "<td>" + arr[i][1].toString() + "</td>\n";
+        ss += "</tr>\n";
+    }
+
+    ss += "</tbody>\n";
+    ss += "</table>\n";
+    ss += "</div>";
+
+    console.log(ss);
+    document.getElementById('spanTabla').innerHTML = ss;
+    
+}
