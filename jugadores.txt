@@ -1,0 +1,11 @@
+ID, NOMBRE, PUNTEO
+1, Luiscar, 0
+2, Juli, 0
+3, Heidy, 0
+4, Memo, 0
+5, Luis, 0
+6, Nono, 0
+7, Chino, 0
+8, Byron, 0
+9, Amis, 0
+10, Kevin, 0

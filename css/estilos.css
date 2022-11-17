@@ -1,0 +1,41 @@
+body {
+
+    background: rgb(0,0,0);
+    background: linear-gradient(74deg, rgba(0,0,0,1) 0%, rgba(141,28,61,1) 75%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    height:100vh;
+    width: 100vw;
+}
+
+#cardTitulo {
+    width: 85%;
+    height: 200px;
+    background:transparent;
+}
+
+#tablaPosiciones{
+    width:85%;
+    height: auto;
+    background:#8d1c3d;
+}
+#tablaPosiciones #tituloCard{
+    background:#8d1c3d;
+    border:2px;
+    border-color: #8d1c3d;
+    width: 100%;
+    height: 100%;
+}
+
+#tablaPosiciones #bodyCard{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(225,195,150,1) 50%, rgba(176,150,119,1) 100%);
+    width:100%;
+    height: 100%;
+}
+img {
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius:0.2em;
+}
