@@ -11,7 +11,7 @@ function llenarJugadores(){
     let jugador = [
         ["Luiscar"       , 0],
         ["Juli"          , 0],
-        ["Heidy"         , 0],
+        ["María"         , 0],
         ["Memo"          , 0],
         ["Luis Valiente" , 0],
         ["Nono"          , 0],
@@ -19,7 +19,9 @@ function llenarJugadores(){
         ["Karlita"       , 0],
         ["Amis"          , 0],
         ["Kevin"         , 0],
-        ["Chino"         , 0]
+        ["Chino"         , 0],
+        ["Josué"         , 0],
+        ["Carlos Salazar", 0]
     ]
     sortByCol(jugador, 1);
     dibujarTabla(jugador);
