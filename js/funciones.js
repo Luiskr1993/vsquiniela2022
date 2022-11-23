@@ -21,7 +21,7 @@ function llenarJugadores(){
         ["Kevin"         , 16],
         ["Chino"         ,  0],
         ["Josué"         , 10],
-        ["Carlos Salazar", 25]
+        ["Carlos Salazar", 13]
     ]
     sortByCol(jugador, 1);
     dibujarTabla(jugador);
