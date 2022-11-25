@@ -9,19 +9,19 @@ function llenarJugadores(){
     //vuelve a escribir los jugadores
 
     let jugador = [
-        ["Luiscar"       , 40],
-        ["Juli"          , 29],
-        ["María"         , 34],
-        ["Memo"          , 33],
-        ["Luis Valiente" , 45],
-        ["Nono"          , 22],
+        ["Luiscar"       , 42],
+        ["Juli"          , 31],
+        ["María"         , 38],
+        ["Memo"          , 53],
+        ["Luis Valiente" , 47],
+        ["Nono"          , 24],
         ["Byron"         , 25],
-        ["Karlita"       , 33],
-        ["Amis"          , 26],
+        ["Karlita"       , 37],
+        ["Amis"          , 29],
         ["Kevin"         , 35],
         ["Chino"         ,  0],
-        ["Josué"         , 26],
-        ["Carlos Salazar", 33]
+        ["Josué"         , 27],
+        ["Carlos Salazar", 37]
     ]
     sortByCol(jugador, 1);
     dibujarTabla(jugador);
